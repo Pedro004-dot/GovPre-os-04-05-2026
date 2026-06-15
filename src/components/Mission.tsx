@@ -49,7 +49,7 @@ function Mission() {
                     className="group bg-gradient-to-br from-white to-blue-50/30 rounded-2xl p-6 border border-gray-100 hover:border-[#00853c]/30 hover:shadow-xl transition-all duration-300"
                   >
                     <div className="flex items-start space-x-4">
-                      <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-xl p-3 group-hover:scale-110 transition-transform duration-300">
+                      <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-xl p-3 group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div>

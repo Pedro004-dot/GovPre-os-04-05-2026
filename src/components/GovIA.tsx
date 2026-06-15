@@ -30,7 +30,7 @@ function GovIA() {
   ];
 
   return (
-    <section id="govia" className="py-12 md:py-24 bg-gradient-to-br from-[#00397b] via-[#0a4a9c] to-[#00853c] relative overflow-hidden">
+    <section id="govia" className="py-12 md:py-24 bg-gradient-to-b from-[#007BFF] to-[#001F3E] relative overflow-hidden">
       <div className="absolute top-1/2 -left-32 w-80 h-80 bg-white/10 rounded-full blur-[120px] opacity-40"></div>
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-[#00853c]/20 rounded-full blur-[120px] opacity-40"></div>
 

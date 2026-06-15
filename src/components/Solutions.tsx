@@ -58,7 +58,7 @@ function Solutions() {
                 key={index}
                 className="group bg-white rounded-3xl p-10 border-2 border-[#00853c]/30 hover:border-[#00853c] hover:shadow-2xl transition-all duration-500 hover:-translate-y-3"
               >
-                <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-2xl w-20 h-20 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                   <Icon className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#00397b] mb-4 leading-tight">

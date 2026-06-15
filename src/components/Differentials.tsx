@@ -48,7 +48,7 @@ function Differentials() {
                   className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/80 shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                   <div className="flex items-start space-x-6">
-                    <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-xl p-4 flex-shrink-0">
+                    <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-xl p-4 flex-shrink-0">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     <div>

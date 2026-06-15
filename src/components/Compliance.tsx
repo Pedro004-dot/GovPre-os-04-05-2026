@@ -75,7 +75,7 @@ function Compliance() {
                   className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-[#00853c]/30 hover:shadow-xl transition-all duration-300"
                 >
                   <div className="flex items-start space-x-6">
-                    <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-xl p-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-7 h-7 text-white" />
                     </div>
                     <div>
@@ -93,7 +93,7 @@ function Compliance() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-3xl p-12 shadow-2xl">
+        <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-3xl p-12 shadow-2xl">
           <div className="grid md:grid-cols-2 gap-8 text-center text-white">
             <div>
               <div className="text-5xl font-bold mb-2">100%</div>

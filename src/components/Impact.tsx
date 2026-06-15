@@ -46,7 +46,7 @@ function Impact() {
                 key={index}
                 className="group bg-gradient-to-br from-white to-blue-50/50 rounded-2xl p-8 border border-gray-100 hover:border-[#00853c]/30 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-[#007BFF] to-[#ABC5FF] rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-5xl font-bold text-[#00397b] mb-3">
@@ -130,7 +130,7 @@ function Impact() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-[#00397b] to-[#00853c] rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-b from-[#007BFF] to-[#001F3E] rounded-2xl p-8 text-white">
               <div className="text-4xl font-bold mb-2">PNCP</div>
               <div className="text-xl font-semibold mb-4">Integração Total</div>
               <p className="text-white/90">
