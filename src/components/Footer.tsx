@@ -12,7 +12,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#162137] text-white">
+    <footer className="bg-[#001F3E] text-white">
       <div className="container mx-auto px-6 lg:px-12 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="space-y-6">
@@ -88,13 +88,13 @@ function Footer() {
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-[#00853c] mt-0.5" />
                 <div>
-                  <div className="text-white/80">govprecos@gmail.com</div>
+                  <div className="text-white/80">contato@govprecos.com.br</div>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-[#00853c] mt-0.5" />
                 <div>
-                  <div className="text-white/80">(31) 9 9990-1464</div>
+                  <div className="text-white/80">(31) 9.7231-1839</div>
                 </div>
               </li>
               <li className="flex items-start space-x-3">

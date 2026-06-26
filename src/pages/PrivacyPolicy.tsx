@@ -101,8 +101,8 @@ function PrivacyPolicy() {
               Se você tiver dúvidas sobre nossa Política de Privacidade, entre em contato conosco:
             </p>
             <div className="bg-gray-100 p-6 rounded-lg space-y-2">
-              <p className="text-gray-700"><strong>Email:</strong> govprecos@gmail.com</p>
-              <p className="text-gray-700"><strong>Telefone:</strong> (31) 9 9990-1464</p>
+              <p className="text-gray-700"><strong>Email:</strong> contato@govprecos.com.br</p>
+              <p className="text-gray-700"><strong>Telefone:</strong> (31) 9.7231-1839</p>
               <p className="text-gray-700"><strong>Localização:</strong> Timóteo/MG</p>
             </div>
           </section>

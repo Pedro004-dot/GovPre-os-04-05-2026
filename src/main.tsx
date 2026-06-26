@@ -5,6 +5,8 @@ import { ErrorBoundary } from './ErrorBoundary.tsx';
 import App from './App.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import TermsOfUse from './pages/TermsOfUse.tsx';
+import EmPautaIndex from './pages/EmPautaIndex.tsx';
+import Artigo from './pages/Artigo.tsx';
 import './index.css';
 
 const root = document.getElementById('root');
@@ -21,6 +23,8 @@ createRoot(root).render(
           <Route path="/" element={<App />} />
           <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
           <Route path="/termos-uso" element={<TermsOfUse />} />
+          <Route path="/em-pauta" element={<EmPautaIndex />} />
+          <Route path="/em-pauta/:slug" element={<Artigo />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>
