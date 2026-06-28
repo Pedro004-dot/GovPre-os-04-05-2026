@@ -1,144 +1,123 @@
 import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { APP_LOGIN_URL } from '../lib/config';
 
 function Footer() {
   const navigate = useNavigate();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const links = [
+    { id: 'funcionalidades', label: 'Funcionalidades' },
+    { id: 'govia', label: 'GovIA' },
+    { id: 'conformidade', label: 'Conformidade' },
+    { id: 'contato', label: 'Contato' },
+  ];
+
   return (
-    <footer className="bg-[#001F3E] text-white">
-      <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
-          <div className="space-y-6">
+    <footer className="bg-navy text-white">
+      <div className="container mx-auto px-6 py-16 lg:px-12">
+        <div className="mb-12 grid gap-12 md:grid-cols-4">
+          <div className="space-y-5">
             <img
-              src="https://i.ibb.co/67fCWKgD/Logo.webp"
-              alt="GOVPREÇOS"
-              className="h-12 brightness-0 invert"
+              src="/images/logo-govprecos.webp"
+              alt="GovPreços"
+              className="h-10 brightness-0 invert"
             />
-            <p className="text-white/80 leading-relaxed">
-              Referência em inteligência de preços públicos, oferecendo soluções tecnológicas que transformam a gestão de contratações no setor público.
+            <p className="text-sm leading-relaxed text-white/70">
+              Software de compras públicas com GovIA integrada. Fase interna da contratação — da
+              pesquisa de preços ao PCA — em conformidade com a Lei 14.133.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.instagram.com/govprecos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#00853c] rounded-full p-2 transition-all duration-300"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-6">Links Rápidos</h3>
-            <ul className="space-y-3">
-              <li>
-                <button
-                  onClick={() => scrollToSection('inicio')}
-                  className="text-white/80 hover:text-[#00853c] transition-colors"
-                >
-                  Início
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('solucoes')}
-                  className="text-white/80 hover:text-[#00853c] transition-colors"
-                >
-                  Soluções
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('metodologia')}
-                  className="text-white/80 hover:text-[#00853c] transition-colors"
-                >
-                  Metodologia
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('conformidade')}
-                  className="text-white/80 hover:text-[#00853c] transition-colors"
-                >
-                  Conformidade
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection('impacto')}
-                  className="text-white/80 hover:text-[#00853c] transition-colors"
-                >
-                  Impacto
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-6">Contato</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-[#00853c] mt-0.5" />
-                <div>
-                  <div className="text-white/80">contato@govprecos.com.br</div>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-[#00853c] mt-0.5" />
-                <div>
-                  <div className="text-white/80">(31) 9.7231-1839</div>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#00853c] mt-0.5" />
-                <div>
-                  <div className="text-white/80">Timóteo/MG</div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-lg mb-6">Acesso Rápido</h3>
             <a
-              href="https://app.govprecos.com.br/login"
+              href="https://www.instagram.com/govprecos"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#00853c] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#006d30] transition-all duration-300 hover:shadow-lg mb-4"
+              className="inline-flex rounded-full bg-white/10 p-2 transition-colors hover:bg-success"
+              aria-label="Instagram GovPreços"
             >
-              Acessar Plataforma
+              <Instagram className="h-5 w-5" />
             </a>
-            <p className="text-white/80 text-sm">
-              Faça login na plataforma GOVPREÇOS e acesse todas as funcionalidades.
+          </div>
+
+          <div>
+            <h3 className="mb-5 text-sm font-bold uppercase tracking-wider">Navegação</h3>
+            <ul className="space-y-2.5">
+              {links.map((link) => (
+                <li key={link.id}>
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection(link.id)}
+                    className="text-sm text-white/70 transition-colors hover:text-success"
+                  >
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button
+                  type="button"
+                  onClick={() => navigate('/em-pauta')}
+                  className="text-sm text-white/70 transition-colors hover:text-success"
+                >
+                  Em pauta
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-5 text-sm font-bold uppercase tracking-wider">Contato</h3>
+            <ul className="space-y-3 text-sm text-white/70">
+              <li className="flex items-start gap-3">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-success" />
+                contato@govprecos.com.br
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-success" />
+                (31) 9.7231-1839
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-success" />
+                Timóteo/MG
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-5 text-sm font-bold uppercase tracking-wider">Plataforma</h3>
+            <a
+              href={APP_LOGIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-action px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-action-hover"
+            >
+              Acessar plataforma
+            </a>
+            <p className="mt-3 text-sm text-white/60">
+              Login para servidores com acesso autorizado.
             </p>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-white/60 text-sm">
-              © 2026 GOVPREÇOS. Todos os direitos reservados.
-            </p>
-            <div className="flex space-x-6 text-sm">
+          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+            <p className="text-xs text-white/50">© 2026 GovPreços. Todos os direitos reservados.</p>
+            <div className="flex gap-6 text-xs">
               <button
+                type="button"
                 onClick={() => navigate('/politica-privacidade')}
-                className="text-white/60 hover:text-[#00853c] transition-colors"
+                className="text-white/50 transition-colors hover:text-success"
               >
-                Política de Privacidade
+                Política de privacidade
               </button>
               <button
+                type="button"
                 onClick={() => navigate('/termos-uso')}
-                className="text-white/60 hover:text-[#00853c] transition-colors"
+                className="text-white/50 transition-colors hover:text-success"
               >
-                Termos de Uso
+                Termos de uso
               </button>
             </div>
           </div>

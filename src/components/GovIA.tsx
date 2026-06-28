@@ -72,7 +72,7 @@ function GovIA() {
 
         <div className="mt-16 text-center">
           <a
-            href="https://wa.me/5531999901464?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20GovIA."
+            href="https://wa.me/5531972311839?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20GovIA."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-2 bg-white text-[#00397b] px-8 py-4 rounded-xl font-semibold hover:bg-[#00d46a] transition-all duration-300 hover:shadow-2xl hover:scale-105"
