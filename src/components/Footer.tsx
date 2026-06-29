@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { APP_LOGIN_URL } from '../lib/config';
+import { APP_LOGIN_URL, LOGO_URL_LIGHT } from '../lib/config';
 
 function Footer() {
   const navigate = useNavigate();
@@ -21,11 +21,7 @@ function Footer() {
       <div className="container mx-auto px-6 py-16 lg:px-12">
         <div className="mb-12 grid gap-12 md:grid-cols-4">
           <div className="space-y-5">
-            <img
-              src="/images/logo-govprecos.webp"
-              alt="GovPreços"
-              className="h-10 brightness-0 invert"
-            />
+            <img src={LOGO_URL_LIGHT} alt="GovPreços" className="h-10 w-auto" />
             <p className="text-sm leading-relaxed text-white/70">
               Software de compras públicas com GovIA integrada. Fase interna da contratação — da
               pesquisa de preços ao PCA — em conformidade com a Lei 14.133.

@@ -22,7 +22,7 @@ export const AMBASSADORS: Ambassador[] = [
   },
   {
     name: 'Leandro Matsumota',
-    role: 'Ex-procurador municipal',
+    role: 'Especialista em planejamento e contratações públicas',
     photo: '/images/Leandro.webp',
     initials: 'LM',
     quote: 'TODO: inserir depoimento do Leandro Matsumota',

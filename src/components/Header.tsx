@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { APP_LOGIN_URL } from '../lib/config';
+import { APP_LOGIN_URL, LOGO_URL, LOGO_URL_LIGHT } from '../lib/config';
 
 const navItems = [
   { id: 'funcionalidades', label: 'Funcionalidades' },
@@ -53,7 +53,8 @@ function Header() {
       : 'font-medium text-navy transition-colors hover:text-action';
   };
 
-  const logoClass = isDarkHeader ? 'h-9 md:h-11 brightness-0 invert' : 'h-9 md:h-11';
+  const logoSrc = isDarkHeader ? LOGO_URL_LIGHT : LOGO_URL;
+  const logoClass = 'h-6 w-auto md:h-7'
   const toggleClass = isDarkHeader
     ? 'p-2 text-white/80 transition-colors hover:text-white md:hidden'
     : 'p-2 text-navy transition-colors hover:text-action md:hidden';
@@ -71,7 +72,7 @@ function Header() {
             className="flex items-center"
             aria-label="Ir para o início"
           >
-            <img src="/images/logo-govprecos.webp" alt="GovPreços" className={logoClass} />
+            <img src={logoSrc} alt="GovPreços" className={logoClass} />
           </button>
 
           <div className="hidden items-center gap-7 md:flex">
